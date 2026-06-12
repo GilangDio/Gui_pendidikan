@@ -55,7 +55,7 @@ def encode_input(data: dict) -> np.ndarray:
 
 @app.route('/')
 def index():
-    return send_from_directory('static', 'index.html')
+    return send_from_directory('.', 'indeks.html')
 
 
 @app.route('/predict', methods=['POST'])
